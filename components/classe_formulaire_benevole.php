@@ -1,5 +1,6 @@
 <?php
 
+//La classe pour le formulaire bénévole
 class Formulaire{
 
     private $Nom;
