@@ -29,6 +29,10 @@ body {
     cursor: pointer;
 }
 
+a{
+    text-decoration-line: none;
+}
+
 .header_nav_bar:hover {
     text-decoration: underline;
     color: #070191;

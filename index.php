@@ -16,7 +16,9 @@
 <body>
 
     <header class="header">
-        <div class="header_nav_bar">Inscription</div>
+        <a href="./html_formulaire_1.php">
+            <div class="header_nav_bar">Inscription</div>
+        </a>
         <div class="header_nav_bar">Mon compte</div>
         <div class="header_nav_bar">Administrateur</div>
     </header>
@@ -25,10 +27,10 @@
         <section class="first_section">
             <div class="first_section_title">Devenez bénévole !</div>
             <div class="first_section_images">
-                <img class="images_accueil_1"  src="./images/asset_images_page_accueil_2.jpg">
-                <img class="images_accueil_2"  src="./images/asset_images_page_accueil_3.jpg">
-                <img class="images_accueil_3"  src="./images/asset_images_page_accueil_4.jpg">
-                
+                <img class="images_accueil_1" src="./images/asset_images_page_accueil_2.jpg">
+                <img class="images_accueil_2" src="./images/asset_images_page_accueil_3.jpg">
+                <img class="images_accueil_3" src="./images/asset_images_page_accueil_4.jpg">
+
             </div>
         </section>
 
