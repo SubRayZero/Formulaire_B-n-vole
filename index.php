@@ -16,7 +16,9 @@
 <body>
 
     <header class="header">
-        <div class="header_nav_bar">Inscription</div>
+        <a href="./html_formulaire_1.php">
+            <div class="header_nav_bar">Inscription</div>
+        </a>
         <div class="header_nav_bar">Mon compte</div>
         <div class="header_nav_bar">Administrateur</div>
     </header>
