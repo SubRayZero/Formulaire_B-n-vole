@@ -55,3 +55,98 @@ span {
     border-radius: 9px;
     width: 50px;
 }
+body {
+    background-color: #FDFDFD;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Maven Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+.header {
+    height: 146px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-weight: 600;
+}
+
+.header_nav_bar {
+
+    margin: 100px;
+    color: #070191;
+
+    cursor: pointer;
+}
+
+.header_nav_bar:hover {
+    text-decoration: underline;
+    color: #070191;
+
+}
+
+.first_section {
+    background-color: #070191;
+    color: #FDFDFD;
+
+    height: 598px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.first_section_title {
+    padding-top: 200px;
+    margin-left: 101px;
+    width: 500px;
+
+    font-size: 90px;
+    font-weight: 500;
+
+}
+
+.first_section_images{
+    width: 50%;
+    margin-left: 100px;
+
+    display: flex;
+    gap: 30px;
+}
+
+.images_accueil_1{
+    height: 170px;
+    width: 325px;
+
+    margin-top: 71px;
+    border-radius: 30px;
+}
+
+.images_accueil_2{
+    position: absolute;
+    height: 163px;
+    width: 408px;
+
+    margin-left: 160px;
+    margin-top: 350px;
+    border-radius: 30px;
+
+}
+
+.images_accueil_3{
+    position: absolute;
+    height: 152px;
+    width: 205px;
+
+    margin-top: 121px;
+    margin-left: 430px;
+    border-radius: 30px;
+
+}
