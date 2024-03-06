@@ -1,0 +1,55 @@
+#### 1. **Création du Formulaire Bénévole**
+
+   - **Tâches :**
+     1. Créer la première partie du formulaire pour les informations du bénévole.
+     2. Mettre en place la validation côté frontend pour la première partie.
+     3. Intégrer la navigation entre les différentes parties du formulaire.
+     4. Réaliser la deuxième partie du formulaire pour les disponibilités et préférences.
+     5. Mettre en place la validation côté frontend pour la deuxième partie.
+     6. Implémenter la troisième partie du formulaire pour l'expression libre du bénévole.
+     7. Mettre en place la validation côté frontend pour la troisième partie.
+     8. Configurer la soumission du formulaire avec une requête POST vers le backend.
+
+
+#### 2. **Traitement des Données Backend**
+
+   - **Tâches :**
+     1. Vérifier les données côté frontend lors de la soumission du formulaire.
+     2. Mettre en place la gestion des requêtes POST côté backend.
+     3. Réaliser la vérification des données reçues côté backend.
+     4. Sécuriser et enregistrer les données dans le fichier CSV approprié.
+     5. Rediriger l'utilisateur vers la page de confirmation ou afficher un message d'erreur.
+
+
+#### 3. **Page du Bénévole**
+
+   - **Tâches :**
+     1. Créer la page de connexion publique à l'espace bénévole.
+     2. Mettre en place le champ de saisie pour le code d'accès unique.
+     3. Configurer la vérification du code d'accès côté backend.
+     4. Rediriger le bénévole vers sa page personnelle si le code est valide.
+     5. Afficher les informations du bénévole sur sa page personnelle.
+
+
+#### 4. **Panel d'Administration**
+
+   - **Tâches :**
+     1. Créer la page de connexion publique à l'espace d'administration.
+     2. Mettre en place les champs de saisie pour le nom d'utilisateur et le mot de passe.
+     3. Configurer la vérification des informations d'administration côté backend.
+     4. Rediriger l'administrateur vers le panneau d'administration en cas de succès.
+     5. Créer le formulaire de création d'événement dans le panneau d'administration.
+     6. Enregistrer les événements dans le fichier CSV approprié.
+     7. Afficher la liste des événements sur la page d'accueil du panneau d'administration.
+     8. Permettre à l'administrateur de planifier des bénévoles pour un événement.
+     9. Enregistrer les missions dans le fichier CSV approprié.
+     10. Permettre à l'administrateur de consulter la liste des bénévoles assignés à un événement.
+
+
+#### 4. **Panel d'Administration**
+
+   - **Tâches :**
+     1. Responsive TOTAL.
+     2. Ecrire un README digne de ce nom.     
+     3. Check final W3C.
+     4. Deploy Github Pages.
