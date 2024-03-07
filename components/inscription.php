@@ -13,6 +13,11 @@ if (
     && isset($_POST["numtel"])
     && isset($_POST["email"])
     && isset($_POST["confirm_email"])
+    && isset($_POST["region"])
+    && isset($_POST["daily_availability"])
+    && isset($_POST["hours_availability"])
+    && isset($_POST["privileged_job"])
+    && isset($_POST["comment"])
 ) {
 
 
@@ -25,11 +30,16 @@ if (
     $NumTel = htmlspecialchars($_POST["numtel"]);
     $Email = htmlspecialchars($_POST["email"]);
     $confirm_email = htmlspecialchars($_POST["confirm_email"]);
+    $Region = htmlspecialchars($_POST["region"]);
+    $Daily_availability = htmlspecialchars($_POST["daily_availability"]);
+    $Hours_availability = htmlspecialchars($_POST["hours_availability"]);
+    $Privileged_job = htmlspecialchars($_POST["privileged_job"]);
+    $Comment = htmlspecialchars($_POST["comment"]);
 
 
     if ($Email === $confirm_email) {
 
-        $new_Formulaire = new Formulaire($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email,);
+        $new_Formulaire = new Formulaire($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Comment);
 
 
         $new_DbF1 = new DbF1("benevoles.csv");
