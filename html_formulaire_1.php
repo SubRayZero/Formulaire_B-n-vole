@@ -21,7 +21,9 @@
         <a href="./index.php">
             <div class="header_nav_bar">Accueil</div>
         </a>
-        <div class="header_nav_bar">Mon compte</div>
+        <a href="./connection_personal_space.php">
+         <div class="header_nav_bar">Mon compte</div>   
+        </a>
         <div class="header_nav_bar">Administrateur</div>
     </header>
 

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Se connecter à mon compte</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="./css/connection.css">
+    <link rel="stylesheet" href="css/connection.css">
+    <link rel="stylesheet" href="css/formulaire.css">
     <script src="annonces.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,6 @@
         <a href="./html_formulaire_1.php">
             <div class="header_nav_bar">Inscription</div>
         </a>
-        <div class="header_nav_bar">Mon compte</div>
         <div class="header_nav_bar">Administrateur</div>
     </header>
 
@@ -31,7 +31,7 @@
                 <input type="username" id="username" name="username" required>
                 <label for="password">Mot de passe</label>
                 <input type="password" id="password" name="password" required>
-                <input type="submit" value="Se connecter">
+                <input type="submit" value="Connexion" class="button">
             </form>
         </div>
     </div>

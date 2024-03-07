@@ -19,7 +19,9 @@
         <a href="./index.php">
             <div class="header_nav_bar">Accueil</div>
         </a>
-        <div class="header_nav_bar">Mon compte</div>
+        <a href="./connection_personal_space.php">
+         <div class="header_nav_bar">Mon compte</div>   
+        </a>
         <div class="header_nav_bar">Administrateur</div>
     </header>
 
@@ -78,7 +80,8 @@
                         <label for="comment">Commentaire</label>
                         <input type="comment" name="" id="comment">
                     </div>
-                    <input type="submit" value="Suivant" id="signUp" class="button" />
+                    <input type="submit" value="Retour" id="signUp" class="button" />                    
+                    <input type="submit" value="Valider l'inscription" id="signUp" class="button" />
                 </form>
             </div>
         </div>
