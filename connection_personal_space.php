@@ -17,8 +17,8 @@
 <body>
 
     <header class="header">
-        <a href="./html_formulaire_1.php">
-            <div class="header_nav_bar">Inscription</div>
+        <a href="./index.php">
+            <div class="header_nav_bar">Accueil</div>
         </a>
         <div class="header_nav_bar">Administrateur</div>
     </header>
@@ -31,7 +31,9 @@
                 <input type="username" id="username" name="username" required>
                 <label for="password">Mot de passe</label>
                 <input type="password" id="password" name="password" required>
+                <a href="/personal_space.php">
                 <input type="submit" value="Connexion" class="button">
+                </a>
             </form>
         </div>
     </div>
