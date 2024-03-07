@@ -7,7 +7,6 @@
     <title>Formulaire Bénévole</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="annonces.js" type="module"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
@@ -19,7 +18,9 @@
         <a href="./html_formulaire_1.php">
             <div class="header_nav_bar">Inscription</div>
         </a>
-        <div class="header_nav_bar">Mon compte</div>
+        <a href="./connection_personal_space.php">
+         <div class="header_nav_bar">Mon compte</div>   
+        </a>
         <div class="header_nav_bar">Administrateur</div>
     </header>
 
