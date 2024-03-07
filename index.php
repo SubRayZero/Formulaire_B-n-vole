@@ -19,7 +19,7 @@
             <div class="header_nav_bar">Inscription</div>
         </a>
         <a href="./connection_personal_space.php">
-         <div class="header_nav_bar">Mon compte</div>   
+            <div class="header_nav_bar">Mon compte</div>   
         </a>
         <div class="header_nav_bar">Administrateur</div>
     </header>
@@ -43,8 +43,8 @@
             <img src="./images/card_1.png" alt="homepage mission card">
             <span>Actualité</span>
             <div class="body_card">
-            <h2>Je participe au tri de la collecte nationale des restos du coeur</h2>
-            <p>Texte descriptif sur le bénévolat bla bla bla bla bla bla bla bla bla bla bla etc.................</p>
+            <h2>Je participe au tri de la collecte des Restos du coeur</h2>
+            <p>Texte descriptif sur le bénévolat</p>
             </div>
         </div>
         <div class="card">
@@ -52,15 +52,15 @@
             <span>Actualité</span>
             <div class="body_card">
             <h2>Je collecte des denrées pour les Restos du Coeur</h2>
-            <p>Texte descriptif sur le bénévolat bla bla bla bla bla bla bla bla bla bla bla etc.................</p>
+            <p>Texte descriptif sur le bénévolat</p>
             </div>
         </div>
         <div class="card">
             <img src="./images/card_1.png" alt="homepage mission card">
             <span>Actualité</span>
             <div class="body_card">
-            <h2>Titre titre titre titre</h2>
-            <p>Texte descriptif sur le bénévolat bla bla bla bla bla bla bla bla bla bla bla etc.................</p>
+            <h2>Titre de la mission</h2>
+            <p>Texte descriptif sur le bénévolat</p>
             </div>
         </div>
     </div>
