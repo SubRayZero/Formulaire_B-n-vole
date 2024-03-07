@@ -21,7 +21,7 @@ class DbF1{
      *
      * @return  self
      */ 
-    public function setbenevoles_csvv(string $benevoles_csv): self
+    public function setbenevoles_csv(string $benevoles_csv): self
     {
         $this->benevoles_csv = $benevoles_csv;
 
