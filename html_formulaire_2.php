@@ -27,7 +27,7 @@
     <section class="section_formulaire">
         <div class="box_formulaire">
             <div class="box_formulaire_center">
-                <form class="form" method="POST" action="./signUp.php">
+                <form class="form" method="POST" action="./components/inscription.php" onsubmit="checkFormValidity()">
                     <div class="inputboxStorage">
                         <label for="region">Région</label>
                         <select id="region" name="region">
