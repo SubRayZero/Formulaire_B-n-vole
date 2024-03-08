@@ -7,6 +7,7 @@
     <title>Mon espace personnel</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/personal_space.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/font/flaticon.css"> -->
     <script src="annonces.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,7 @@
 <body>
 
     <header class="header">
+        <!-- <i class="fi fi-rr-home"></i> -->
         <a href="./index.php">
             <div class="header_nav_bar">Accueil</div>
         </a>
@@ -29,23 +31,12 @@
     <div class="personal_container">
         <div class="mission_container">
             <h2>Vos missions</h2>
+            <img src="./images/card_1.png" alt="mission image">
+            <h3>Participation à la collecte des restos du coeur</h3>
             <div class="mission_element">
-                <img src="./images/card_1.png" alt="homepage mission card">
-                <div class="mission_body">
-                    <h3>Je participe au tri de la collecte des restos du coeur</h3>
-                    <p>Date de la mission</p>
-                    <p>Heure de la mission</p>
-                    <p>Adresse de la mission</p>
-                </div>
-            </div>
-            <div class="mission_element">
-                <img src="./images/card_2.png" alt="homepage mission card">
-                <div class="mission_body">
-                    <h3>Je collecte des denrées pour les Restos du Coeur</h3>
-                    <p>Date de la mission</p>
-                    <p>Heure de la mission</p>
-                    <p>Adresse de la mission</p>
-                </div>
+                    <p>Date de la mission : </p>
+                    <p>Heure de la mission : </p>
+                    <p>Adresse de la mission : </p>
             </div>
         </div>
 
@@ -54,8 +45,9 @@
             <div class="personal_informations_element">
                 <p>Nom : </p>
                 <p>Prénom : </p>
+                <p>Adresse : </p>
                 <p>Adresse mail : </p>
-                <p>Numéro de téléphone : </p>
+                <p>Date d'inscription : </p>
             </div>
         </div>
     </div>
