@@ -46,7 +46,7 @@
      10. Permettre à l'administrateur de consulter la liste des bénévoles assignés à un événement.
 
 
-#### 4. **Panel d'Administration**
+#### 5. **Autre**
 
    - **Tâches :**
      1. Responsive TOTAL.
