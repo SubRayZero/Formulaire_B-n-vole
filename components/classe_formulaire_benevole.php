@@ -9,14 +9,25 @@ class Formulaire{
     private $Sexe;
     private $NumTel;
     private $Email;
+    private $Region;
+    private $Daily_availability;
+    private $Hours_availability;
+    private $Privileged_job;
+    private $Comment;
 
-    public function __construct($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email) {
+
+    public function __construct($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Comment) {
         $this->Nom = $Nom;
         $this->Prenom = $Prenom;
         $this->Age = $Age;
         $this->Sexe = $Sexe;
         $this->NumTel = $NumTel;
         $this->Email = $Email;
+        $this->Region = $Region;
+        $this->Daily_availability = $Daily_availability;
+        $this->Hours_availability = $Hours_availability;
+        $this->Privileged_job = $Privileged_job;
+        $this->Comment = $Comment;
     }
 
     
@@ -139,6 +150,102 @@ class Formulaire{
     {
         $this->Email = $Email;
 
+        return $this;
+    }
+
+    /**
+     * Get the value of Region
+     */ 
+    public function getRegion()
+    {
+        return $this->Region;
+    }
+
+    /** 
+     * Set the value of Region
+     *
+     * @return  self
+     */ 
+    public function setRegion($Region)
+    {
+        $this->Region = $Region;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Daily_availability
+     */
+    public function getDaily_availability()
+    {
+        return $this->Daily_availability;
+    }
+
+    /**
+     * Set the value of Daily_availability
+     *
+     * @return  self
+     */
+    public function setDaily_availability($Daily_availability)
+    {
+        $this->Daily_availability = $Daily_availability;
+        return $this;
+    }
+
+    /**
+     * Get the value of Hours_availability
+     */
+    public function getHours_availability()
+    {
+        return $this->Hours_availability;
+    }
+
+    /**
+     * Set the value of Hours_availability
+     *
+     * @return  self
+     */
+    public function setHours_availability($Hours_availability)
+    {
+        $this->Hours_availability = $Hours_availability;
+        return $this;
+    }
+
+    /**
+     * Get the value of Privileged_job
+     */
+    public function getPrivileged_job()
+    {
+        return $this->Privileged_job;
+    }
+
+    /**
+     * Set the value of Privileged_job
+     *
+     * @return  self
+     */
+    public function setPrivileged_job($Privileged_job)
+    {
+        $this->Privileged_job = $Privileged_job;
+        return $this;
+    }
+
+    /**
+     * Get the value of Comment
+     */
+    public function getComment()
+    {
+        return $this->Comment;
+    }
+
+    /**
+     * Set the value of Comment
+     *
+     * @return  self
+     */
+    public function setComment($Comment)
+    {
+        $this->Comment = $Comment;
         return $this;
     }
 

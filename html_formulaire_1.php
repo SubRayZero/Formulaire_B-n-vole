@@ -25,13 +25,17 @@
         <a href="../components/administration.php">
             <div class="header_nav_bar">Administrateur</div>
         </a>
+        <a href="./connection_personal_space.php">
+         <div class="header_nav_bar">Mon compte</div>   
+        </a>
+        <div class="header_nav_bar">Administrateur</div>
     </header>
 
 
     <section class="section_formulaire">
         <div class="box_formulaire">
             <div class="box_formulaire_center">
-                <form class="form" method="POST" action="./components/inscription.php" onsubmit="checkFormValidity()">
+                <form class="form" method="POST" action="./html_formulaire_2.php">
                     <div class="inputboxStorage">
                         <label for="nom">Nom *</label>
                         <input type="text" name="nom" id="nom">
