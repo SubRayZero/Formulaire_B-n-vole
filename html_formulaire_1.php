@@ -22,7 +22,9 @@
             <div class="header_nav_bar">Accueil</div>
         </a>
         <div class="header_nav_bar">Mon compte</div>
-        <div class="header_nav_bar">Administrateur</div>
+        <a href="../components/administration.php">
+            <div class="header_nav_bar">Administrateur</div>
+        </a>
     </header>
 
 
@@ -45,7 +47,7 @@
                     <div class="inputboxStorage">
                         <label for="sexe">Sexe *</label>
                         <select id="sexe" name="sexe" id="sexe">
-                        <option value="femme">Choisir</option>
+                            <option value="femme">Choisir</option>
                             <option value="femme">Femme</option>
                             <option value="homme">Homme</option>
                             <option value="non_specifie">Non spécifié</option>
@@ -63,7 +65,7 @@
                         <label for="confirm_email">Confirmation adresse mail *</label>
                         <input type="confirm_email" name="confirm_email" id="confirm_email">
                     </div>
-                    <input type="submit" value="Suivant" id="inscription" class="button"/>
+                    <input type="submit" value="Suivant" id="inscription" class="button" />
                 </form>
             </div>
         </div>
