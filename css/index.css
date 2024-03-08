@@ -1,3 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
 .card_container {
     display: flex;
     flex-direction: row;
@@ -19,7 +25,7 @@
     text-align: center;
 }
 
-.card > * {
+.card>* {
     margin-bottom: 10px;
 }
 
@@ -61,6 +67,7 @@ span {
     width: 60px;
     padding-left: 4%;
 }
+
 body {
     background-color: #FDFDFD;
     margin: 0;
@@ -91,7 +98,7 @@ body {
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration-line: none;
 }
 
@@ -102,9 +109,12 @@ a{
 }
 
 .first_section {
-    background: #000046;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #FDFDFD;
 
     height: 598px;
@@ -124,7 +134,7 @@ a{
 
 }
 
-.first_section_images{
+.first_section_images {
     width: 50%;
     margin-left: 100px;
 
@@ -132,7 +142,7 @@ a{
     gap: 30px;
 }
 
-.images_accueil_1{
+.images_accueil_1 {
     height: 170px;
     width: 325px;
 
@@ -140,7 +150,7 @@ a{
     border-radius: 30px;
 }
 
-.images_accueil_2{
+.images_accueil_2 {
     position: absolute;
     height: 163px;
     width: 408px;
@@ -151,7 +161,7 @@ a{
 
 }
 
-.images_accueil_3{
+.images_accueil_3 {
     position: absolute;
     height: 152px;
     width: 205px;

@@ -54,7 +54,7 @@ class DbF1{
     }
 
     //permet de récupérer tout le contenu du fichier csv sous forme de tableau
-    public function read_from_benevoles_csv()
+    /*public function read_from_benevoles_csv()
     {
         $data_benevoles = [];
         $csv_benevoles = $this->readbenevoles_csv();
@@ -68,6 +68,6 @@ class DbF1{
         }
 
         return $data_benevoles;
-    }
+    }*/
 
 }
