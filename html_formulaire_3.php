@@ -36,7 +36,7 @@ $_SESSION['form_2'] = $_POST;
                 <form class="form" method="POST" action="./components/inscription.php" onsubmit="checkFormValidity()">
                     <div class="inputboxStorage">
                         <label for="comment">Expression libre</label>
-                        <textarea name="comment" id="comment" cols="20" rows="30"></textarea>
+                        <textarea name="comment" id="free_expression" cols="20" rows="30"></textarea>
                     </div>
                     <div class="nav_form">
                         <input type="submit" value="Valider" id="validate" class="button" />

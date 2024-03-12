@@ -14,9 +14,10 @@ class Formulaire{
     private $Hours_availability;
     private $Privileged_job;
     private $Comment;
+    private $Free_expression;
 
 
-    public function __construct($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Comment) {
+    public function __construct($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Comment, $Free_expression) {
         $this->Nom = $Nom;
         $this->Prenom = $Prenom;
         $this->Age = $Age;
@@ -28,6 +29,7 @@ class Formulaire{
         $this->Hours_availability = $Hours_availability;
         $this->Privileged_job = $Privileged_job;
         $this->Comment = $Comment;
+        $this->Free_expression = $Free_expression;
     }
 
     
@@ -249,6 +251,25 @@ class Formulaire{
         return $this;
     }
 
+    /**
+     * Get the value of Free_expression
+     */
+    public function getFree_expression()
+    {
+        return $this->Free_expression;
+    }
+
+    /**
+     * Set the value of Free_expression
+     *
+     * @return  self
+     */
+    public function setFree_expression($Free_expression)
+    {
+        $this->Free_expression = $Free_expression;
+        return $this;
+    }
+
     public function convertToArray(){
         return [
             $this->getNom(),
@@ -261,7 +282,8 @@ class Formulaire{
             $this->getDaily_availability(),
             $this->getHours_availability(),
             $this->getPrivileged_job(),
-            $this->getComment()
+            $this->getComment(),
+            $this->getFree_expression()
         ];
     }
 }

@@ -1,7 +1,7 @@
 <?php
 $file = fopen('./components/benevoles.csv', 'r');
 while (($line = fgetcsv($file)) !== FALSE) {
-//   print($line[0]);
+  print($line[0]);
 }
 fclose($file);
 ?>
