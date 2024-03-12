@@ -24,19 +24,18 @@
 
     <div class="connection_container">
         <div class="container_form">
-            <form action="connection_personal_space.php" method="post" action="./personal_space.php">
+            <form action="connection_personal_space.php" method="post">
                 <h1>Se connecter</h1>
-                <label for="username">Nom d'utilisateur</label>
-                <input type="username" id="username" name="username" required>
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" required>
-                <a href="/personal_space.php">
-                <input type="submit" value="Connexion" class="button">
+                <label for="pseudo">Nom d'utilisateur</label>
+                <input type="pseudo" id="pseudo" name="pseudo" required>
+                <label for="mot_passe">Mot de passe</label>
+                <input type="mot_passe" id="mot_passe" name="mot_passe" required>
+                <a href="/components/administration.php">
+                    <input type="submit" value="Connexion" class="button">
                 </a>
             </form>
         </div>
     </div>
-
     <footer>
         <div class="footer_nav_bar">Mentions légales</div>
         <div class="footer_nav_bar">CGU</div>

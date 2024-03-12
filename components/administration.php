@@ -1,13 +1,8 @@
 <?php
 
-
 require_once 'classe_formulaire_benevole.php';
 require_once 'data_base_f1.php';
 require_once 'inscription.php';
-
-
-
-
 
 ?>
 
@@ -21,7 +16,7 @@ require_once 'inscription.php';
     <title>Formulaire Bénévole</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/formulaire.css">
-    <link rel="stylesheet" href="../css/adminitration.css">
+    <link rel="stylesheet" href="../css/administration.css">
     <script src="/javascript/validity.js"></script>
 
 
@@ -33,7 +28,7 @@ require_once 'inscription.php';
 <body>
 
     <header class="header">
-        <a href="./index.php">
+        <a href="../index.php">
             <div class="header_nav_bar">Accueil</div>
         </a>
         <div class="header_nav_bar">Mon compte</div>
@@ -42,16 +37,30 @@ require_once 'inscription.php';
     <section class="section_formulaire">
         <div class="box_formulaire">
             <div class="box_formulaire_center">
-                <form class="form" method="POST" action="../Formulaire_Benevole/components/insc" onsubmit="checkFormValidity()">
+                <form class="form" method="POST" action="evenements.php" onsubmit="checkFormValidity()">
+
                     <div class="inputboxStorage">
-                        <label for="personne">Choix personne *</label>
-                        <select id="nom" name="nom" id="nom">
+                        <label for="choix_evenement">Choix de l'évenement *</label>
+                        <select id="choix_evenement" name="choix_evenement">
+                            <option value="personnes_agees">Aide personnes agées</option>
+                            <option value="espace_naturelles">Aide espaces naturelles</option>
+                            <option value="ventes">Ventes</option>
+                            <option value="bricolage">Bricolage</option>
+                            <option value="informatique">Informatique</option>
+                        </select>
+                    </div>
 
 
+                    <div class="inputboxStorage">
+                        <label for="description">Description de l'évenement *</label>
+                        <textarea type="description" name="description" id="description"></textarea>
+                    </div>
 
-
+                    <div class="inputboxStorage">
+                        <label for="personne">Choix du bénévole *</label>
+                        <select id="personne" name="personne">
                             <?php
-                            
+
                             $new_DbF1 = new DbF1("./benevoles.csv");
                             $csv_benevoles = $new_DbF1->readbenevoles_csv();
 
@@ -68,10 +77,7 @@ require_once 'inscription.php';
                                 $new_DbF1->closebenevoles_csv($csv_benevoles);
                             }
 
-                            return $data_benevoles;
                             ?>
-
-
                         </select>
                     </div>
 
@@ -79,4 +85,5 @@ require_once 'inscription.php';
                 </form>
             </div>
         </div>
+    </section>
 </body>

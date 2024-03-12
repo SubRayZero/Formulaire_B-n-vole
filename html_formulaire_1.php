@@ -29,7 +29,6 @@ $_SESSION = $_POST;
         <a href="./connection_personal_space.php">
             <div class="header_nav_bar">Mon compte</div>
         </a>
-        <div class="header_nav_bar">Administrateur</div>
 
     </header>
 
