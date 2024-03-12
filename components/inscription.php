@@ -4,7 +4,6 @@ require_once 'classe_formulaire_benevole.php';
 require_once 'data_base_f1.php';
 session_start();
 $_SESSION['form_3'] = $_POST;
-var_dump($_SESSION);
 
 if (
     !empty($_SESSION)
