@@ -43,11 +43,10 @@
         <div class="personal_informations">
             <h2>Vos informations personnelles</h2>
             <div class="personal_informations_element">
-                <p>Nom : </p>
-                <p>Prénom : </p>
-                <p>Adresse : </p>
-                <p>Adresse mail : </p>
-                <p>Date d'inscription : </p>
+                <p>Nom : <?php echo $Nom; ?></p>
+                <p>Prénom : <?php echo $Prenom; ?></p>
+                <p>Région : <?php echo $Region; ?></p>
+                <p>Adresse mail : <?php echo $email; ?></p>
             </div>
         </div>
     </div>

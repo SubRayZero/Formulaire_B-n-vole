@@ -54,8 +54,7 @@ input {
 }
 
 .button {
-    align-self: center;
-    margin: auto;
+    align-self: center; 
 }
 
 .container_form h1 {
