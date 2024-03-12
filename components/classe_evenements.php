@@ -7,13 +7,15 @@ class Evenements
     private $Choix;
     private $Description;
     private $Personne;
+    private $Region;
 
 
-    public function __construct($Choix, $Personne, $Description = '')
+    public function __construct($Choix, $Personne, $Region, $Description = '')
     {
         $this->Choix = $Choix;
         $this->Description = $Description;
         $this->Personne = $Personne;
+        $this->Region = $Region;
     }
 
     /**
@@ -76,12 +78,35 @@ class Evenements
         return $this;
     }
 
+        /**
+     * Get the value of Region
+     */ 
+    public function getRegion()
+    {
+        return $this->Region;
+    }
+
+    /**
+     * Set the value of Region
+     *
+     * @return  self
+     */ 
+    public function setRegion($Region)
+    {
+        $this->Region = $Region;
+
+        return $this;
+    }
+
     public function convertToArray()
     {
         return [
             $this->getChoix(),
             $this->getDescription(),
             $this->getPersonne(),
+            $this->getRegion(),
         ];
     }
+
+
 }

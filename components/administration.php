@@ -50,9 +50,18 @@ require_once 'inscription.php';
                         </select>
                     </div>
 
+                    <div class="inputboxStorage">
+                        <label for="region_admin">Région *</label>
+                        <select id="region_admin" name="region_admin" required>
+                            <option value="" selected>Veuillez sélectionner votre région</option>
+                            <option value="isere">Isère</option>
+                            <option value="rhone_alps">Rhône Alpes</option>
+                        </select>
+                    </div>
+
 
                     <div class="inputboxStorage">
-                        <label for="description">Description de l'évenement *</label>
+                        <label for="description">Description de l'évenement</label>
                         <textarea type="description" name="description" id="description"></textarea>
                     </div>
 
