@@ -253,6 +253,15 @@ class Formulaire{
         return [
             $this->getNom(),
             $this->getEmail(),
+            $this->getPrenom(),
+            $this->getAge(),
+            $this->getSexe(),
+            $this->getNumTel(),
+            $this->getRegion(),
+            $this->getDaily_availability(),
+            $this->getHours_availability(),
+            $this->getPrivileged_job(),
+            $this->getComment()
         ];
     }
 }

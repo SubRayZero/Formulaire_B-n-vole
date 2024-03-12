@@ -1,3 +1,8 @@
+<?php
+session_start();
+$_SESSION = $_POST;
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -35,19 +40,19 @@
                 <form class="form" method="POST" action="./html_formulaire_2.php">
                     <div class="inputboxStorage">
                         <label for="nom">Nom *</label>
-                        <input type="text" name="nom" id="nom">
+                        <input type="text" name="nom" id="nom" required>
                     </div>
                     <div class="inputboxStorage">
                         <label for="prenom">Prenom *</label>
-                        <input type="prenom" name="prenom" id="prenom">
+                        <input type="prenom" name="prenom" id="prenom" required>
                     </div>
                     <div class="inputboxStorage">
                         <label for="age">Age *</label>
-                        <input type="age" name="age" id="age">
+                        <input type="age" name="age" id="age" required>
                     </div>
                     <div class="inputboxStorage">
                         <label for="sexe">Sexe *</label>
-                        <select id="sexe" name="sexe" id="sexe">
+                        <select id="sexe" name="sexe" id="sexe" required>
                             <option value="femme">Choisir</option>
                             <option value="femme">Femme</option>
                             <option value="homme">Homme</option>
@@ -56,15 +61,15 @@
                     </div>
                     <div class="inputboxStorage">
                         <label for="numtel">Numéro de téléphone *</label>
-                        <input type="numtel" name="numtel" id="numtel">
+                        <input type="numtel" name="numtel" id="numtel" required>
                     </div>
                     <div class="inputboxStorage">
                         <label for="email">Adresse mail *</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="inputboxStorage">
                         <label for="confirm_email">Confirmation adresse mail *</label>
-                        <input type="confirm_email" name="confirm_email" id="confirm_email">
+                        <input type="confirm_email" name="confirm_email" id="confirm_email" required>
                     </div>
                     <input type="submit" value="Suivant" id="inscription" class="button" />
                 </form>

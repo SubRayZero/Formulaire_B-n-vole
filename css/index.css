@@ -25,6 +25,11 @@ body{
     text-align: center;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 .card>* {
     margin-bottom: 10px;
 }

@@ -2,6 +2,6 @@
 function checkFormValidity() {
 
 
-        alert("ipage suivante");
+        alert("image suivante");
 
 }

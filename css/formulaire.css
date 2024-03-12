@@ -10,13 +10,17 @@
 }
 
 .box_formulaire {
-
     margin-top: 40px;
     background-color: #FDFDFD;
-    height: 820px;
+    height: 800px;
     width: 400px;
+    border-radius: 10px;
+    box-shadow: inset rgba(30, 40, 55, 0.2) 0px 0px 40px 0px, rgba(0, 0, 0, .3) 0px 30px 100px -24px;
+}
 
-
+#last_form_page {
+    height: 630px;
+    width: 400px;
 }
 
 .box_formulaire_center {
@@ -29,7 +33,6 @@
 
     font-size: 20px;
     font-weight: 600;
-
 }
 
 .form {

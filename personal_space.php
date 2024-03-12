@@ -1,3 +1,11 @@
+<?php
+$file = fopen('./components/benevoles.csv', 'r');
+while (($line = fgetcsv($file)) !== FALSE) {
+//   print($line[0]);
+}
+fclose($file);
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -43,9 +51,9 @@
         <div class="personal_informations">
             <h2>Vos informations personnelles</h2>
             <div class="personal_informations_element">
-                <p>Nom : <?php echo $Nom; ?></p>
-                <p>Prénom : <?php echo $Prenom; ?></p>
-                <p>Région : <?php echo $Region; ?></p>
+                <p>Nom : <?php echo $nom; ?></p>
+                <p>Prénom : <?php echo $prenom; ?></p>
+                <p>Région : <?php echo $region; ?></p>
                 <p>Adresse mail : <?php echo $email; ?></p>
             </div>
         </div>
