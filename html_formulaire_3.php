@@ -1,6 +1,7 @@
 <?php
 session_start();
 $_SESSION['form_2'] = $_POST;
+
 ?>
 
 <!doctype html>
@@ -35,8 +36,8 @@ $_SESSION['form_2'] = $_POST;
             <div class="box_formulaire_center">
                 <form class="form" method="POST" action="./components/inscription.php" onsubmit="checkFormValidity()">
                     <div class="inputboxStorage">
-                        <label for="comment">Expression libre</label>
-                        <textarea name="comment" id="free_expression" cols="20" rows="30"></textarea>
+                        <label for="free_expression">Expression libre</label>
+                        <textarea name="free_expression" id="free_expression" cols="20" rows="30" min="30" max="500"></textarea>
                     </div>
                     <div class="nav_form">
                         <input type="submit" value="Valider" id="validate" class="button" />

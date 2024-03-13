@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -196,4 +196,8 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 12px;
+}
+
+input:invalid:focus {
+    border-color: red;
 }
