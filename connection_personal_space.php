@@ -28,7 +28,7 @@
                 <h1>Se connecter</h1>
                 <label for="username">Nom d'utilisateur</label>
                 <input type="username" id="username" name="username" required>
-                <label for="password">Mot de passe</label>
+                <label for="password">Code unique</label>
                 <input type="password" id="password" name="password" required>
                 <a href="/personal_space.php">
                 <input type="submit" value="Connexion" class="button">

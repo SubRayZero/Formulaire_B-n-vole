@@ -51,9 +51,9 @@ fclose($file);
         <div class="personal_informations">
             <h2>Vos informations personnelles</h2>
             <div class="personal_informations_element">
-                <p>Nom : <?php echo $nom; ?></p>
-                <p>Prénom : <?php echo $prenom; ?></p>
-                <p>Région : <?php echo $region; ?></p>
+                <p>Nom : </p>
+                <p>Prénom : </p>
+                <p>Région : </p>
                 <p>Adresse mail : <?php echo $email; ?></p>
             </div>
         </div>
