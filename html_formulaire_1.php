@@ -54,7 +54,7 @@ $_SESSION = $_POST;
                     <div class="inputboxStorage">
                         <label for="sexe">Sexe *</label>
                         <select id="sexe" name="sexe" id="sexe" required>
-                            <option value="femme">Choisir</option>
+                            <option  value="femme">Choisir</option>
                             <option value="femme">Femme</option>
                             <option value="homme">Homme</option>
                             <option value="non_specifie">Secret</option>

@@ -28,8 +28,6 @@ if (
 ) {
 
 
-
-
     //special chars
     $Nom = htmlspecialchars($_POST['nom']);
     $Prenom = htmlspecialchars($_POST['prenom']);
@@ -50,7 +48,6 @@ if (
 
 
     if ($Email === $confirm_email) {
-
         $new_Formulaire = new Formulaire($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Comment);
 
 
@@ -69,5 +66,10 @@ if (
             header("Location: ../html_formulaire_3.php?success1");
             exit;
         }
+    } else {
+
+        //"success0" n'est là que pour les testes (penser à l'enlever et mettre le vrai chemin quand les tests seront ok)
+        header("Location: ../html_formulaire_3.php?success0");
+        exit;
     }
 }

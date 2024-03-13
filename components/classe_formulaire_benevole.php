@@ -31,8 +31,6 @@ class Formulaire{
     }
 
     
-
-
     /**
      * Get the value of Nom
      */ 

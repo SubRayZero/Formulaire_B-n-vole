@@ -36,7 +36,7 @@ $_SESSION['form_1'] = $_POST;
                     <div class="inputboxStorage">
                         <label for="region">Région *</label>
                         <select id="region" name="region" required>
-                            <option value="" selected>Veuillez sélectionner votre région</option>
+                            <option value="">Veuillez sélectionner votre région</option>
                             <option value="isere">Isère</option>
                             <option value="rhone_alps">Rhône Alpes</option>
                         </select>
@@ -44,7 +44,7 @@ $_SESSION['form_1'] = $_POST;
                     <div class="inputboxStorage">
                         <label for="daily_availability">Disponibilité par jour *</label>
                         <select id="daily_availability" name="daily_availability" required>
-                            <option value="" selected>Veuillez sélectionner votre jour</option>
+                            <option  value="" >Veuillez sélectionner votre jour</option>
                             <option value="lundi">Lundi</option>
                             <option value="Mardi">Mardi</option>
                             <option value="Mercredi">Mercredi</option>
@@ -57,7 +57,7 @@ $_SESSION['form_1'] = $_POST;
                     <div class="inputboxStorage">
                         <label for="hours_availability">Disponibilité horaires *</label>
                         <select id="hours_availability" name="hours_availability" required>
-                            <option value="" selected>Veuillez sélectionner votre horaire</option>
+                            <option  value="">Veuillez sélectionner votre horaire</option>
                             <option value="8">08h</option>
                             <option value="9">09h</option>
                             <option value="10">10h</option>
@@ -73,7 +73,7 @@ $_SESSION['form_1'] = $_POST;
                     <div class="inputboxStorage">
                         <label for="privileged_job">Poste(s) priviligié(s) *</label>
                         <select id="privileged_job" name="privileged_job" required>
-                            <option value="" selected>Veuillez sélectionner votre poste</option>
+                            <option  value="">Veuillez sélectionner votre poste</option>
                             <option value="ecologie">Ecologie</option>
                             <option value="resto_du_coeur">Resto du coeur</option>
                             <option value="animaux">Animaux</option>
@@ -81,7 +81,7 @@ $_SESSION['form_1'] = $_POST;
                     </div>
                     <div class="inputboxStorage">
                         <label for="comment">Commentaire</label>
-                        <textarea name="comment" id="comment" cols="30" rows="15"></textarea>
+                        <textarea name="comment" id="comment" cols="30" rows="15" ></textarea>
                     </div>
                     <div class="nav_form">
                         <input type="submit" value="Suivant" id="next" class="button" />

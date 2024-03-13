@@ -1,7 +1,12 @@
 <?php
 $file = fopen('./components/benevoles.csv', 'r');
 while (($line = fgetcsv($file)) !== FALSE) {
-  print($line[0]);
+  $nom = $line[0];
+  $mail = $line[1];
+  $prenom = $line[2];
+  $age = $line[3];
+  $region = $line[6];
+
 }
 fclose($file);
 ?>
@@ -54,7 +59,7 @@ fclose($file);
                 <p>Nom : <?php echo $nom; ?></p>
                 <p>Prénom : <?php echo $prenom; ?></p>
                 <p>Région : <?php echo $region; ?></p>
-                <p>Adresse mail : <?php echo $email; ?></p>
+                <p>Adresse mail : <?php echo $mail; ?></p>
             </div>
         </div>
     </div>
