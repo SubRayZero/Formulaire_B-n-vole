@@ -2,6 +2,11 @@
 $file = fopen('./components/benevoles.csv', 'r');
 while (($line = fgetcsv($file)) !== FALSE) {
   $nom = $line[0];
+  $mail = $line[1];
+  $prenom = $line[2];
+  $age = $line[3];
+  $region = $line[6];
+
 }
 fclose($file);
 ?>
