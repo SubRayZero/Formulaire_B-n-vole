@@ -1,7 +1,7 @@
 <?php
 $file = fopen('./components/benevoles.csv', 'r');
 while (($line = fgetcsv($file)) !== FALSE) {
-  print($line[0]);
+  $nom = $line[0];
 }
 fclose($file);
 ?>
@@ -51,10 +51,10 @@ fclose($file);
         <div class="personal_informations">
             <h2>Vos informations personnelles</h2>
             <div class="personal_informations_element">
-                <p>Nom : </p>
-                <p>Prénom : </p>
-                <p>Région : </p>
-                <p>Adresse mail : <?php echo $email; ?></p>
+                <p>Nom : <?php echo $nom; ?></p>
+                <p>Prénom : <?php echo $prenom; ?></p>
+                <p>Région : <?php echo $region; ?></p>
+                <p>Adresse mail : <?php echo $mail; ?></p>
             </div>
         </div>
     </div>

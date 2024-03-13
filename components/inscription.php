@@ -22,7 +22,6 @@ if (
     && isset($_SESSION['form_3']['free_expression'])
 ) {
 
-
     //special chars
     $Nom = htmlspecialchars($_SESSION['form_1']['nom']);
     $Prenom = htmlspecialchars($_SESSION['form_1']['prenom']);
@@ -40,7 +39,6 @@ if (
 
 
     if ($Email === $confirm_email) {
-
         $new_Formulaire = new Formulaire($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Comment, $Free_expression);
 
 
@@ -61,7 +59,7 @@ if (
         }
     } else {
 
-        //"success0" n'est là que pour les testes (penser à l'enlever et mettre le vrai chemin quand les tests seront ok)
+        // "success0" n'est là que pour les testes (penser à l'enlever et mettre le vrai chemin quand les tests seront ok)
         header("Location: ../html_formulaire_3.php?success0");
         exit;
     }
