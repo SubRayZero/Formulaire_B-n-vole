@@ -11,6 +11,8 @@ body {
     gap: 8%;
     margin-top: 10%;
     margin-bottom: 10%;
+
+    flex-wrap: wrap;
 }
 
 .card {
@@ -200,4 +202,32 @@ footer {
 
 input:invalid:focus {
     border-color: red;
+}
+
+
+@media screen and (max-width: 1340px) {
+    .first_section_images {
+        display: none;
+    }
+
+    .card_container {
+        gap: 50px;
+    }
+
+    .first_section_title {
+        margin-left: 50px;
+
+    }
+}
+
+@media screen and (max-width: 494x) {
+    .first_section_title {
+        display: none;
+    }
+
+    .first_section {
+        display: none;
+    
+    }
+
 }
