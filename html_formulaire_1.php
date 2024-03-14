@@ -29,14 +29,13 @@ $_SESSION = $_POST;
         <a href="./connection_personal_space.php">
             <div class="header_nav_bar">Mon compte</div>
         </a>
-
     </header>
 
 
     <section class="section_formulaire">
         <div class="box_formulaire">
             <div class="box_formulaire_center">
-                <form class="form" method="POST" action="./html_formulaire_2.php">
+                <form class="form" method="POST" action="./html_formulaire_2.php" onsubmit="checkFormValidity()">
                     <div class="inputboxStorage">
                         <label for="nom">Nom *</label>
                         <input type="text" name="nom" id="nom" required>
@@ -55,7 +54,7 @@ $_SESSION = $_POST;
                             <option  value="femme">Choisir</option>
                             <option value="femme">Femme</option>
                             <option value="homme">Homme</option>
-                            <option value="non_specifie">Non spécifié</option>
+                            <option value="non_specifie">Secret</option>
                         </select>
                     </div>
                     <div class="inputboxStorage">
@@ -82,6 +81,7 @@ $_SESSION = $_POST;
         <div class="footer_nav_bar">CGU</div>
         <div class="footer_nav_bar">Plan du site</div>
     </footer>
+    <script src="./javascript/validity.js"></script>
 </body>
 
 </html>

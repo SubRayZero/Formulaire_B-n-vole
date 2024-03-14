@@ -32,7 +32,7 @@ $_SESSION['form_1'] = $_POST;
     <section class="section_formulaire">
         <div class="box_formulaire">
             <div class="box_formulaire_center">
-                <form class="form" method="POST" action="./html_formulaire_3.php">
+                <form class="form" method="POST" action="./html_formulaire_3.php" onsubmit="checkFormValidity()">
                     <div class="inputboxStorage">
                         <label for="region">Région *</label>
                         <select id="region" name="region" required>
@@ -97,6 +97,7 @@ $_SESSION['form_1'] = $_POST;
         <div class="footer_nav_bar">CGU</div>
         <div class="footer_nav_bar">Plan du site</div>
     </footer>
+    <script src="./javascript/validity.js"></script>
 </body>
 
 </html>

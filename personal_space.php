@@ -6,7 +6,6 @@ while (($line = fgetcsv($file)) !== FALSE) {
   $prenom = $line[2];
   $age = $line[3];
   $region = $line[6];
-
 }
 fclose($file);
 ?>
