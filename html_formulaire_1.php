@@ -28,14 +28,13 @@ $_SESSION = $_POST;
         </a>
     </header>
 
-
     <section class="section_formulaire">
         <div class="box_formulaire">
             <div class="box_formulaire_center">
-                <form class="form" method="POST" action="./html_formulaire_2.php" onsubmit="checkFormValidity()">
+                <form class="form" method="POST" action="./html_formulaire_2.php" onsubmit="check_form_validity_first()">
                     <div class="inputboxStorage">
                         <label for="nom">Nom *</label>
-                        <input type="text" name="nom" id="nom" required>
+                        <input type="text" minlength="3" maxlength="30" name="nom" id="nom" required>
                     </div>
                     <div class="inputboxStorage">
                         <label for="prenom">Prenom *</label>
@@ -43,12 +42,12 @@ $_SESSION = $_POST;
                     </div>
                     <div class="inputboxStorage">
                         <label for="age">Age *</label>
-                        <input type="number" id="age" name="age" min="18" max="45" />
+                        <input type="number" id="age" name="age" min="18" max="45" required />
                     </div>
                     <div class="inputboxStorage">
                         <label for="sexe">Sexe *</label>
                         <select id="sexe" name="sexe" id="sexe" required>
-                            <option  value="femme">Choisir</option>
+                            <option  value="femme">Veuillez choisir..</option>
                             <option value="femme">Femme</option>
                             <option value="homme">Homme</option>
                             <option value="non_specifie">Secret</option>
@@ -64,7 +63,7 @@ $_SESSION = $_POST;
                     </div>
                     <div class="inputboxStorage">
                         <label for="confirm_email">Confirmation adresse mail *</label>
-                        <input type="confirm_email" name="confirm_email" id="confirm_email" required>
+                        <input type="email" name="confirm_email" id="confirm_email" required>
                     </div>
                     <input type="submit" value="Suivant" id="inscription" class="button" />
                 </form>

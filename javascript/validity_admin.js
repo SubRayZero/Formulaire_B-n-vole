@@ -12,6 +12,4 @@ function checkFormValidityAdmin() {
         alert("Mauvais identifiant ou mot de passe")
         return false;
     }
-
-
 }
