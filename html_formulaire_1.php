@@ -42,11 +42,11 @@ $_SESSION = $_POST;
                     </div>
                     <div class="inputboxStorage">
                         <label for="prenom">Prenom *</label>
-                        <input type="prenom" name="prenom" id="prenom" required>
+                        <input type="prenom" minlength="3" maxlength="30" name="prenom" id="prenom" required>
                     </div>
                     <div class="inputboxStorage">
                         <label for="age">Age *</label>
-                        <input type="age" name="age" id="age" required>
+                        <input type="number" id="age" name="age" min="18" max="45" />
                     </div>
                     <div class="inputboxStorage">
                         <label for="sexe">Sexe *</label>
@@ -59,7 +59,7 @@ $_SESSION = $_POST;
                     </div>
                     <div class="inputboxStorage">
                         <label for="numtel">Numéro de téléphone *</label>
-                        <input type="numtel" name="numtel" id="numtel" required>
+                        <input type="numtel" minlength="10" maxlength="10" name="numtel" id="numtel" required>
                     </div>
                     <div class="inputboxStorage">
                         <label for="email">Adresse mail *</label>

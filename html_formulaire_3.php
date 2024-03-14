@@ -1,6 +1,7 @@
 <?php
 session_start();
 $_SESSION['form_2'] = $_POST;
+
 ?>
 
 <!doctype html>
