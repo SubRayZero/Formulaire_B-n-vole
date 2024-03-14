@@ -6,7 +6,6 @@ require_once 'inscription.php';
 
 ?>
 
-
 <!doctype html>
 <html lang="en">
 

@@ -40,6 +40,7 @@ if (
     $Hours_availability = htmlspecialchars($_POST['hours_availability']);
     $Privileged_job = htmlspecialchars($_POST['privileged_job']);
     $Comment = htmlspecialchars($_POST['comment']);
+    
 
 
 
