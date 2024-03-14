@@ -28,7 +28,6 @@ $_SESSION = $_POST;
         </a>
     </header>
 
-
     <section class="section_formulaire">
         <div class="box_formulaire">
             <div class="box_formulaire_center">
@@ -64,7 +63,7 @@ $_SESSION = $_POST;
                     </div>
                     <div class="inputboxStorage">
                         <label for="confirm_email">Confirmation adresse mail *</label>
-                        <input type="confirm_email" name="confirm_email" id="confirm_email" required>
+                        <input type="email" name="confirm_email" id="confirm_email" required>
                     </div>
                     <input type="submit" value="Suivant" id="inscription" class="button" />
                 </form>

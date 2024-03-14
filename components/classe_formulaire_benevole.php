@@ -13,10 +13,9 @@ class Formulaire{
     private $Daily_availability;
     private $Hours_availability;
     private $Privileged_job;
-    private $Comment;
+    private $Free_expression;
 
-
-    public function __construct($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Comment) {
+    public function __construct($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Free_expression) {
         $this->Nom = $Nom;
         $this->Prenom = $Prenom;
         $this->Age = $Age;
@@ -27,10 +26,9 @@ class Formulaire{
         $this->Daily_availability = $Daily_availability;
         $this->Hours_availability = $Hours_availability;
         $this->Privileged_job = $Privileged_job;
-        $this->Comment = $Comment;
+        $this->$Free_expression = $Free_expression;
     }
 
-    
     /**
      * Get the value of Nom
      */ 
@@ -229,21 +227,21 @@ class Formulaire{
     }
 
     /**
-     * Get the value of Comment
+     * Get the value of Free_expression
      */
-    public function getComment()
+    public function getFree_expression()
     {
-        return $this->Comment;
+        return $this->Free_expression;
     }
 
     /**
-     * Set the value of Comment
+     * Set the value of Free_expression
      *
      * @return  self
      */
-    public function setComment($Comment)
+    public function setFree_expression($Free_expression)
     {
-        $this->Comment = $Comment;
+        $this->Free_expression = $Free_expression;
         return $this;
     }
 
@@ -259,7 +257,7 @@ class Formulaire{
             $this->getDaily_availability(),
             $this->getHours_availability(),
             $this->getPrivileged_job(),
-            $this->getComment(),
+            $this->getFree_expression(),
         ];
     }
 }

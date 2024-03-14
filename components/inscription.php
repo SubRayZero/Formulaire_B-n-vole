@@ -7,8 +7,6 @@ session_start();
 
 $_SESSION['form_3'] = $_POST;
 
-
-
 if (
     !empty($_SESSION)
     && isset($_SESSION['form_1']['nom'])
@@ -22,33 +20,24 @@ if (
     && isset($_SESSION['form_2']['daily_availability'])
     && isset($_SESSION['form_2']['hours_availability'])
     && isset($_SESSION['form_2']['privileged_job'])
-    && isset($_SESSION['form_2']['comment'])
-
+    && isset($_SESSION['form_3']['free_expression'])
 ) {
 
-
-    //special chars
-    $Nom = htmlspecialchars($_POST['nom']);
-    $Prenom = htmlspecialchars($_POST['prenom']);
-    $Age = htmlspecialchars($_POST['age']);
-    $Sexe = htmlspecialchars($_POST['sexe']);
-    $NumTel = htmlspecialchars($_POST['numtel']);
-    $Email = htmlspecialchars($_POST['email']);
-    $confirm_email = htmlspecialchars($_POST['confirm_email']);
-    $Region = htmlspecialchars($_POST['region']);
-    $Daily_availability = htmlspecialchars($_POST['daily_availability']);
-    $Hours_availability = htmlspecialchars($_POST['hours_availability']);
-    $Privileged_job = htmlspecialchars($_POST['privileged_job']);
-    $Comment = htmlspecialchars($_POST['comment']);
+    $Nom = htmlspecialchars($_SESSION['form_1']['nom']);
+    $Prenom = htmlspecialchars($_SESSION['form_1']['prenom']);
+    $Age = htmlspecialchars($_SESSION['form_1']['age']);
+    $Sexe = htmlspecialchars($_SESSION['form_1']['sexe']);
+    $NumTel = htmlspecialchars($_SESSION['form_1']['numtel']);
+    $Email = htmlspecialchars($_SESSION['form_1']['email']);
+    $confirm_email = htmlspecialchars($_SESSION['form_1']['confirm_email']);
+    $Region = htmlspecialchars($_SESSION['form_2']['region']);
+    $Daily_availability = htmlspecialchars($_SESSION['form_2']['daily_availability']);
+    $Hours_availability = htmlspecialchars($_SESSION['form_2']['hours_availability']);
+    $Privileged_job = htmlspecialchars($_SESSION['form_2']['privileged_job']);
+    $Free_expression = htmlspecialchars($_SESSION['form_3']['free_expression']);
     
-
-
-
-
-
-
     if ($Email === $confirm_email) {
-        $new_Formulaire = new Formulaire($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Comment);
+        $new_Formulaire = new Formulaire($Nom, $Prenom, $Age, $Sexe, $NumTel, $Email, $Region, $Daily_availability, $Hours_availability, $Privileged_job, $Free_expression);
 
 
         $new_DbF1 = new DbF1("./benevoles.csv");

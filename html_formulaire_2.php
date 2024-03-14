@@ -28,7 +28,6 @@ $_SESSION['form_1'] = $_POST;
         </a>
     </header>
 
-
     <section class="section_formulaire">
         <div class="box_formulaire">
             <div class="box_formulaire_center">
@@ -65,8 +64,8 @@ $_SESSION['form_1'] = $_POST;
                         </select>
                     </div>
                     <div class="inputboxStorage">
-                        <label for="privileged_job">Poste(s) priviligié(s) *</label>
-                        <select id="privileged_job" name="privileged_job" required>
+                        <label for="privileged_job">Poste(s) priviligié(s)</label>
+                        <select id="privileged_job" name="privileged_job">
                             <option value="">Veuillez choisir..</option>
                             <option value="securite">Sécurité</option>
                             <option value="bar">Bar</option>
@@ -74,10 +73,6 @@ $_SESSION['form_1'] = $_POST;
                             <option value="animation">Animation</option>
                         </select>
                     </div>
-                    <!-- <div class="inputboxStorage">
-                        <label for="comment">Commentaire</label>
-                        <textarea name="comment" id="comment" cols="30" rows="15" ></textarea>
-                    </div> -->
                     <div class="nav_form">
                         <input type="submit" value="Suivant" id="next" class="button" />
                     </div>

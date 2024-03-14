@@ -4,10 +4,10 @@ let age = document.getElementById('age').value;
 let sexe = document.getElementById('sexe').value;
 let numtel = document.getElementById('numtel').value;
 let email = document.getElementById('email').value;
+let email_confirmation = document.getElementById('confirm_email').value;
 let region = document.getElementById('region').value;
 let dispo_jour = document.getElementById('daily_availability').value;
 let dispo_heure = document.getElementById('hours_availability').value;
-let poste = document.getElementById('privileged_job').value;
 let expression = document.getElementById('free_expression').value;
 
 
@@ -69,6 +69,11 @@ function check_form_validity_first() {
                 return false;
         }
 
+        if (email != email_confirmation) {
+                alert('Les emails ne correspondent pas !');
+                return false;
+        }
+
         return true;
 }
 
@@ -86,11 +91,6 @@ function check_form_validity_second() {
 
         if (dispo_heure == "") {
                 alert('Disponibilité horaire non renseignée !');
-                return false;
-        }
-
-        if (poste == "") {
-                alert('Poste non renseigné !');
                 return false;
         }
 
