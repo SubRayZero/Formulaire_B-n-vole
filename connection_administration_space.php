@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/connection.css">
     <link rel="stylesheet" href="css/formulaire.css">
-    <script src="annonces.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
@@ -24,7 +23,7 @@
 
     <div class="connection_container">
         <div class="container_form">
-            <form action="connection_personal_space.php" method="post">
+            <form class="form" method="POST" action="/components/administration.php" onsubmit="return checkFormValidityAdmin()">
                 <h1>Se connecter</h1>
                 <label for="pseudo">Nom d'utilisateur</label>
                 <input type="pseudo" id="pseudo" name="pseudo" required>
@@ -41,6 +40,7 @@
         <div class="footer_nav_bar">CGU</div>
         <div class="footer_nav_bar">Plan du site</div>
     </footer>
+    <script src="./javascript/validity_admin.js"></script>
 </body>
 
 </html>

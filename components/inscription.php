@@ -6,7 +6,6 @@ require_once 'data_base_f1.php';
 session_start();
 
 $_SESSION['form_3'] = $_POST;
-var_dump($_SESSION);
 
 
 
@@ -41,6 +40,7 @@ if (
     $Hours_availability = htmlspecialchars($_POST['hours_availability']);
     $Privileged_job = htmlspecialchars($_POST['privileged_job']);
     $Comment = htmlspecialchars($_POST['comment']);
+    
 
 
 
@@ -63,13 +63,13 @@ if (
 
             //"success1" n'est là que pour les tests (penser à l'enlever et mettre le vrai chemin quand les tests seront ok)
 
-            header("Location: ../html_formulaire_3.php?success1");
+            header("Location: ../html_formulaire_1.php?success1");
             exit;
         }
     } else {
 
         //"success0" n'est là que pour les testes (penser à l'enlever et mettre le vrai chemin quand les tests seront ok)
-        header("Location: ../html_formulaire_3.php?success0");
+        header("Location: ../html_formulaire_1.php?success0");
         exit;
     }
 }

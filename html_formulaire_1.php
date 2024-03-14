@@ -12,9 +12,6 @@ $_SESSION = $_POST;
     <title>Formulaire Bénévole</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/formulaire.css">
-    <script src="/javascript/validity.js"></script>
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
