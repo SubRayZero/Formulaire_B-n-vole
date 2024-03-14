@@ -23,6 +23,11 @@
     width: 400px;
 }
 
+#second_form_page {
+    height: 630px;
+    width: 400px;
+}
+
 .box_formulaire_center {
     display: flex;
     justify-content: center;
@@ -71,5 +76,9 @@ select {
 
     margin-left: 220px;
     cursor: pointer;
+}
+
+#code {
+    display: none;
 }
 

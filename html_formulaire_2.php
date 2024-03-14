@@ -29,7 +29,7 @@ $_SESSION['form_1'] = $_POST;
     </header>
 
     <section class="section_formulaire">
-        <div class="box_formulaire">
+        <div class="box_formulaire" id="second_form_page">
             <div class="box_formulaire_center">
                 <form class="form" method="POST" action="./html_formulaire_3.php" onsubmit="check_form_validity_second()">
                     <div class="inputboxStorage">

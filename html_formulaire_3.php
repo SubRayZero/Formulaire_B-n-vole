@@ -46,6 +46,10 @@ $_SESSION['form_2'] = $_POST;
         </div>
     </section>
 
+    <section id="code">
+        <h2>Votre code unique : </h2>
+    </section>
+
     <footer>
         <div class="footer_nav_bar">Mentions légales</div>
         <div class="footer_nav_bar">CGU</div>
