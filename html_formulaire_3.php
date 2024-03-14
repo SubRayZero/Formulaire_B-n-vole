@@ -34,7 +34,7 @@ $_SESSION['form_2'] = $_POST;
     <section class="section_formulaire">
         <div class="box_formulaire" id="last_form_page">
             <div class="box_formulaire_center">
-                <form class="form" method="POST" action="./components/inscription.php" onsubmit="checkFormValidity()">
+                <form class="form" method="POST" action="./components/inscription.php" onsubmit="check_form_validity_third()">
                     <div class="inputboxStorage">
                         <label for="comment">Expression libre</label>
                         <textarea name="free_expression" id="free_expression" cols="20" rows="30"></textarea>

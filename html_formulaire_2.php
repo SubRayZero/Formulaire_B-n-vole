@@ -32,57 +32,52 @@ $_SESSION['form_1'] = $_POST;
     <section class="section_formulaire">
         <div class="box_formulaire">
             <div class="box_formulaire_center">
-                <form class="form" method="POST" action="./html_formulaire_3.php" onsubmit="checkFormValidity()">
+                <form class="form" method="POST" action="./html_formulaire_3.php" onsubmit="check_form_validity_second()">
                     <div class="inputboxStorage">
                         <label for="region">Région *</label>
                         <select id="region" name="region" required>
-                            <option value="">Veuillez sélectionner votre région</option>
-                            <option value="isere">Isère</option>
-                            <option value="rhone_alps">Rhône Alpes</option>
+                            <option value="">Veuillez choisir..</option>
+                            <option value="ain">Ain</option>
+                            <option value="ardeche">Ardèche</option>
+                            <option value="drome">Drôme</option>
+                            <option value="loire">Loire</option>
+                            <option value="rhone">Rhône</option>
+                            <option value="savoie">Savoie</option>
+                            <option value="haute_savoie">Haute Savoie</option>
                         </select>
                     </div>
                     <div class="inputboxStorage">
-                        <label for="daily_availability">Disponibilité par jour *</label>
+                        <label for="daily_availability">Disponibilité jour *</label>
                         <select id="daily_availability" name="daily_availability" required>
-                            <option  value="" >Veuillez sélectionner votre jour</option>
-                            <option value="lundi">Lundi</option>
-                            <option value="Mardi">Mardi</option>
-                            <option value="Mercredi">Mercredi</option>
-                            <option value="Jeudi">Jeudi</option>
-                            <option value="Vendredi">Vendredi</option>
-                            <option value="Samedi">Samedi</option>
-                            <option value="Dimanche">Dimanche</option>
+                            <option value="">Veuillez choisir..</option>
+                            <option value="semaine">Semaine</option>
+                            <option value="weekend">Weekend</option>
                         </select>
                     </div>
                     <div class="inputboxStorage">
                         <label for="hours_availability">Disponibilité horaires *</label>
                         <select id="hours_availability" name="hours_availability" required>
-                            <option  value="">Veuillez sélectionner votre horaire</option>
-                            <option value="8">08h</option>
-                            <option value="9">09h</option>
-                            <option value="10">10h</option>
-                            <option value="11">11h</option>
-                            <option value="12">12h</option>
-                            <option value="13">13h</option>
-                            <option value="13">14h</option>
-                            <option value="13">15h</option>
-                            <option value="13">16h</option>
-                            <option value="13">17h</option>
+                            <option value="">Veuillez choisir..</option>
+                            <option value="matin">Matin</option>
+                            <option value="apres-midi">Après-midi</option>
+                            <option value="soir">Soir</option>
+                            <option value="nuit">Nuit</option>
                         </select>
                     </div>
                     <div class="inputboxStorage">
                         <label for="privileged_job">Poste(s) priviligié(s) *</label>
                         <select id="privileged_job" name="privileged_job" required>
-                            <option  value="">Veuillez sélectionner votre poste</option>
-                            <option value="ecologie">Ecologie</option>
-                            <option value="resto_du_coeur">Resto du coeur</option>
-                            <option value="animaux">Animaux</option>
+                            <option value="">Veuillez choisir..</option>
+                            <option value="securite">Sécurité</option>
+                            <option value="bar">Bar</option>
+                            <option value="technique">Technique</option>
+                            <option value="animation">Animation</option>
                         </select>
                     </div>
-                    <div class="inputboxStorage">
+                    <!-- <div class="inputboxStorage">
                         <label for="comment">Commentaire</label>
                         <textarea name="comment" id="comment" cols="30" rows="15" ></textarea>
-                    </div>
+                    </div> -->
                     <div class="nav_form">
                         <input type="submit" value="Suivant" id="next" class="button" />
                     </div>
