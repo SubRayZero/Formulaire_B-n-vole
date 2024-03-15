@@ -44,7 +44,7 @@ $_SESSION['form_2'] = $_POST;
     <section class="section_formulaire">
         <div class="box_formulaire" id="last_form_page">
             <div class="box_formulaire_center">
-                <form class="form" method="POST" action="./components/inscription.php" onsubmit="check_form_validity_third()">
+                <form class="form" id="test" method="POST" action="./components/inscription.php" onsubmit="check_form_validity_third()">
                     <div class="inputboxStorage">
                         <label for="comment">Expression libre</label>
                         <textarea name="free_expression" id="free_expression" minlength="30" maxlength="500" cols="20" rows="14" required></textarea>
@@ -62,7 +62,9 @@ $_SESSION['form_2'] = $_POST;
         <div class="footer_nav_bar">CGU</div>
         <div class="footer_nav_bar">Plan du site</div>
     </footer>
+    
     <script src="./javascript/validity.js"></script>
+    <script src="./javascript/unique_code.js"></script>
 </body>
 
 </html>

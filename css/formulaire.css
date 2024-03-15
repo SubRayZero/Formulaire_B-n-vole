@@ -26,6 +26,11 @@
     width: 400px;
 }
 
+#second_form_page {
+    height: 500px;
+    width: 400px;
+}
+
 .box_formulaire_center {
     display: flex;
     justify-content: center;

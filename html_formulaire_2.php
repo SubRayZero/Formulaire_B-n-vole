@@ -38,7 +38,7 @@ $_SESSION['form_1'] = $_POST;
 
 
     <section class="section_formulaire">
-        <div class="box_formulaire">
+        <div class="box_formulaire" id="second_form_page">
             <div class="box_formulaire_center">
                 <form class="form" method="POST" action="./html_formulaire_3.php" onsubmit="check_form_validity_second()">
                     <div class="inputboxStorage">
@@ -73,7 +73,7 @@ $_SESSION['form_1'] = $_POST;
                         </select>
                     </div>
                     <div class="inputboxStorage">
-                        <label for="privileged_job">Poste(s) priviligié(s)</label>
+                        <label for="privileged_job">Poste priviligié</label>
                         <select id="privileged_job" name="privileged_job">
                             <option value="">Veuillez choisir..</option>
                             <option value="securite">Sécurité</option>
