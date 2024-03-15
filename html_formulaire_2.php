@@ -64,7 +64,7 @@ $_SESSION['form_1'] = $_POST;
                         </select>
                     </div>
                     <div class="inputboxStorage">
-                        <label for="privileged_job">Poste(s) priviligié(s)</label>
+                        <label for="privileged_job">Poste priviligié</label>
                         <select id="privileged_job" name="privileged_job">
                             <option value="">Veuillez choisir..</option>
                             <option value="securite">Sécurité</option>

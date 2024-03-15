@@ -72,34 +72,14 @@ h3 {
     box-shadow: 0 0 10px #070191;
 }
 
-.mission_container>img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
-    border-radius: 10px;
-}
-
-.mission_element {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 40px;
-    padding-left: 30px;
-}
-
-.mission_element>* {
-    font-size: 20px;
-    font-weight: bold;
-}
-
+.mission_element,
 .personal_informations_element {
     width: 80%;
     height: 80%;
     padding: 30px;
 }
 
+.mission_element>*,
 .personal_informations_element>* {
     margin-bottom: 40px;
     font-size: 20px;

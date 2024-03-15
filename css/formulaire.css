@@ -24,7 +24,7 @@
 }
 
 #second_form_page {
-    height: 630px;
+    height: 500px;
     width: 400px;
 }
 
@@ -78,7 +78,23 @@ select {
     cursor: pointer;
 }
 
+.section_code_unique {
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
 #code {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    color: #F2F5FA;
 }
 

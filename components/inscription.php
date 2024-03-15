@@ -43,22 +43,17 @@ if (
         $new_DbF1 = new DbF1("./benevoles.csv");
         $csv_DbF1 = $new_DbF1->openbenevoles_csv();
 
-
         if ($csv_DbF1 !== false) {
 
             $new_DbF1->writeIntobenevoles_csv($csv_DbF1, $new_Formulaire->convertToArray());
 
             $new_DbF1->closebenevoles_csv($csv_DbF1);
 
-            //"success1" n'est là que pour les tests (penser à l'enlever et mettre le vrai chemin quand les tests seront ok)
-
-            header("Location: ../html_formulaire_1.php?success1");
+            header("Location: ../unique_code.php");
             exit;
         }
     } else {
-
-        //"success0" n'est là que pour les testes (penser à l'enlever et mettre le vrai chemin quand les tests seront ok)
-        header("Location: ../html_formulaire_1.php?success0");
+        header("Location: ../index.php");
         exit;
     }
 }

@@ -23,7 +23,7 @@
 
     <div class="connection_container">
         <div class="container_form">
-            <form action="connection_personal_space.php" method="post" action="./personal_space.php">
+            <form method="post" action="./personal_space.php" onsubmit="return check_validity_personal_space()">
                 <h1>Se connecter</h1>
                 <label for="username">Nom d'utilisateur</label>
                 <input type="username" id="username" name="username" required>
@@ -41,6 +41,7 @@
         <div class="footer_nav_bar">CGU</div>
         <div class="footer_nav_bar">Plan du site</div>
     </footer>
+    <script src="./javascript/validity_personal_space.js"></script>
 </body>
 
 </html>

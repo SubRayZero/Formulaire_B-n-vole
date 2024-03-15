@@ -220,7 +220,7 @@ input:invalid:focus {
     }
 }
 
-@media screen and (max-width: 494x) {
+@media screen and (max-width: 494px) {
     .first_section_title {
         display: none;
     }

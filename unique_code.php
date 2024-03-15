@@ -1,9 +1,3 @@
-<?php
-session_start();
-$_SESSION['form_2'] = $_POST;
-
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -30,19 +24,13 @@ $_SESSION['form_2'] = $_POST;
         <div class="header_nav_bar">Administrateur</div>
     </header>
 
-    <section class="section_formulaire">
-        <div class="box_formulaire" id="last_form_page">
-            <div class="box_formulaire_center">
-                <form class="form" id="test" method="POST" action="./components/inscription.php" onsubmit="check_form_validity_third()">
-                    <div class="inputboxStorage">
-                        <label for="comment">Expression libre</label>
-                        <textarea name="free_expression" id="free_expression" minlength="30" maxlength="500" cols="20" rows="30" required></textarea>
-                    </div>
-                    <div class="nav_form">
-                        <input type="submit" value="Valider" id="validate" class="button" />
-                    </div>
-                </form>
-            </div>
+    <section class="section_code_unique">
+        <div id="code">
+            Votre formulaire à bien été enregistré ! 
+            <br><br>
+            Voici votre code unique :
+            <br><br>
+            <h3 id="unique_code"></h3>
         </div>
     </section>
 
@@ -51,9 +39,7 @@ $_SESSION['form_2'] = $_POST;
         <div class="footer_nav_bar">CGU</div>
         <div class="footer_nav_bar">Plan du site</div>
     </footer>
-    
-    <script src="./javascript/validity.js"></script>
-    <script src="./javascript/unique_code.js"></script>
+    <script src="./javascript/unique_code.js" defer></script>
 </body>
 
 </html>

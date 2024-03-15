@@ -28,8 +28,8 @@
                 <label for="pseudo">Nom d'utilisateur</label>
                 <input type="pseudo" id="pseudo" name="pseudo" required>
                 <label for="mot_passe">Mot de passe</label>
-                <input type="mot_passe" id="mot_passe" name="mot_passe" required>
-                <a href="/components/administration.php">
+                <input type="mot_passe" id="unique_code" name="mot_passe" required>
+                <a href="./personal_space.php">
                     <input type="submit" value="Connexion" class="button">
                 </a>
             </form>
